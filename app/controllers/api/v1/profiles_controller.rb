@@ -1,6 +1,6 @@
 module Api
   module V1
-    class ProfilesController < ApplicationController
+    class ProfilesController < ApiController
       def index
         @profiles = Profile.all
       end
