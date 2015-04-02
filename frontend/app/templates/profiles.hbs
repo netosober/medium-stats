@@ -1,0 +1,8 @@
+<h1>Existing profiles</h1>
+<ul>
+  {{#each profile in controller}}
+    {{#link-to 'profile' profile tagName='li'}}
+      {{profile.name}}
+    {{/link-to}}
+  {{/each}}
+</ul>

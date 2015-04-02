@@ -1,8 +1,14 @@
 <div class="header">
   <h1 class="title">Medium Stats</h1>
+  <div class="search">
+    {{input class="search-input" type="text" value=name placeholder="medium username"}}
+    <button class="search-button" {{action 'search'}}>Search</button>
+  </div>
 </div>
 <div class="main">
-  {{outlet}}
+  <div class="content">
+    {{outlet}}
+  </div>
 </div>
 <div class="footer">
 </div>

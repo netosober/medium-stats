@@ -12,18 +12,30 @@ body {
 }
 
 .header {
-  @include linear-gradient(#1e5799, #2989d8);
+  @include linear-gradient(#3990F4, #98C9F0);
   padding: em(10);
   color: $white;
   .title {
     text-align: center;
     margin: 0 auto 0 auto;
+    padding: em(10);
+  }
+  .search {
+    @include outer-container(em(600));
+    .search-input {
+      @include span-columns(8);
+    }
+    .search-button {
+      @include span-columns(4);
+    }
   }
 }
 
 .main {
 
   .content {
+    margin-top: em(10);
+    margin-bottom: em(10);
     @include outer-container(em(600));
   }
 }
