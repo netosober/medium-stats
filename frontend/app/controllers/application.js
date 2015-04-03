@@ -1,7 +1,10 @@
 import Ember from "ember";
 
-var ApplicationController = Ember.ObjectController.extend({
-  search: function() {
+var ApplicationController = Ember.Controller.extend({
+  actions: {
+    search: function() {
+      this.transitionToRoute('/profiles/' + this.get('name'));
+    }
   }
 });
 
